@@ -2,14 +2,14 @@
 
 
 ## Introduction
-
+![image alt](https://github.com/richurross/Azure-SOC-Honeynet-Live-Traffic-/blob/3a87e787047bd4e10c6d9ea0718f6f7e2da9bc94/1.gif)
 
 
 ## Architecture Before Hardening / Security Controls
-
+![image alt](https://github.com/richurross/Azure-SOC-Honeynet-Live-Traffic-/blob/3a87e787047bd4e10c6d9ea0718f6f7e2da9bc94/2.gif)
 
 ## Architecture After Hardening / Security Controls
-
+![image alt](https://github.com/richurross/Azure-SOC-Honeynet-Live-Traffic-/blob/3a87e787047bd4e10c6d9ea0718f6f7e2da9bc94/3.gif)
 
 
 ## Attack Maps Before Hardening / Security Controls
