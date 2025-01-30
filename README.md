@@ -36,6 +36,22 @@ After a 24-hour insecure assessment, I reinforced the security controls for the 
 
 ## Attack Maps Before Hardening / Security Controls
 
+The attack map portrayed below details an overview of malicious attack attempts targeted at a publicly exposed Microsoft SQL server over a 24-hour period. The map highlights the precise geographic locations wherein said attacks or login attempts originated.
+
+![image alt](https://github.com/richurross/Azure-SOC-Honeynet-Live-Traffic-/blob/c8dcadcc0edbefad6a61eb75e91a45e6868ce1ac/MSSQL%20Auth%20Fail%20Map.png)
+
+The attack map portrayed below depicts numerous failed syslog authentication attemps of my Linux server. The map features unauthorized access attempts originating from sources external to the local network as the server was publicly exposed to the internet. The graphic accentuates the urgency of security hardening, robust identity and access management, and system log monitoring for detecting and preventing potentail breaches.
+
+![image alt](https://github.com/richurross/Azure-SOC-Honeynet-Live-Traffic-/blob/c8dcadcc0edbefad6a61eb75e91a45e6868ce1ac/Linux%20SSH%20Auth%20Fail%20Map.png)
+
+The attack map portrayed below highlights the number of attacks attempts after intentionally leaving my VM's Network Security Groups (NSG's) vulnerable and open to all traffic. This permits unchecked malicious network traffic and emphasizes how easily an attacker may discover a weak, exposed network. The graphic reminds us that NSG's and security rules are mandatory for minimizing the overall attack surface of a network.
+
+![image alt](https://github.com/richurross/Azure-SOC-Honeynet-Live-Traffic-/blob/c8dcadcc0edbefad6a61eb75e91a45e6868ce1ac/NSG%20Malicious%20Flow%20Map.png)
+
+The attack map portrayed below showcases various failed, unauthorized access attempts utilizing Remote Desktop Protocol (RDP) and Server Message Block (SMB) methods against my publicly exposed Windows machine. RDP, utilized for remote access, and SMB, utilized for file-sharing services, are typical networking protocols utilized by malicious entities to gain remote access to a network. As such, this map demonstrates the criticality in which we must preemptively secure these communication channels to prevent unauthorized access of sensitive data and davices.
+
+![image alt](https://github.com/richurross/Azure-SOC-Honeynet-Live-Traffic-/blob/c8dcadcc0edbefad6a61eb75e91a45e6868ce1ac/Windows%20RDP%20Auth%20Fail%20Map.png)
+
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
@@ -50,7 +66,7 @@ Stop Time 2024-12-07T09:36:35
 | SecurityIncident         | 316
 | AzureNetworkAnalytics_CL | 1217
 
-## Attack Maps Before Hardening / Security Controls
+## Attack Maps After Hardening / Security Controls
 
 ```All map queries actually returned no results due to no instances of malicious activity for the 24 hour period after hardening.```
 
